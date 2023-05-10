@@ -197,6 +197,7 @@ class _AnimatedTextKitState extends State<AnimatedTextKit>
         }
       } else {
         widget.onFinished?.call();
+        _controller.reverse();
         return;
       }
     } else {
